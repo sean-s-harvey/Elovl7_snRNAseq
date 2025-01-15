@@ -12,5 +12,7 @@ After quality control, indivdual sample datasets were initially consolidated int
 
 Positive differential expression of each cluster against all other clusters was determined with the FindAllMarkers() function. Cell-types were annotated using previously published marker genes. 
 
+![annotated_UMAP_052824](https://github.com/user-attachments/assets/9a2e9dfb-0a9c-4667-9051-7a47866f7c42)
+
 # Differential Expression Analysis
 Differential expression analysis between groups was performed by providing log-normalized counts data to the MAST algorithm, which leverages a hurdle model that combines tests for both discrete and continuous aspects of gene expression, and accounts for variation in the cellular detection rate, or the proportion of genes expressed in a single cell. Differentially expressed genes (DEGs) were assigned when the absolute value of the fold-change was greater than 20%, and p-value with Bonferroni's correction was <0.01. For heatmaps, the average expression value of each gene across all cells within a sample was determined via the AverageExpression() function in Seurat. Heatmaps were generated with the pheatmap (v.1.0.12) package in R. 
