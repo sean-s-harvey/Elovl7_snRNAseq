@@ -17,6 +17,8 @@ Positive differential expression of each cluster against all other clusters was 
 # Differential Expression Analysis
 Differential expression analysis between groups was performed by providing log-normalized counts data to the MAST algorithm, which leverages a hurdle model that combines tests for both discrete and continuous aspects of gene expression, and accounts for variation in the cellular detection rate, or the proportion of genes expressed in a single cell. Differentially expressed genes (DEGs) were assigned when the absolute value of the fold-change was greater than 20%, and p-value with Bonferroni's correction was <0.01. For heatmaps, the average expression value of each gene across all cells within a sample was determined via the AverageExpression() function in Seurat. Heatmaps were generated with the pheatmap (v.1.0.12) package in R. 
 
+Example: astrocyte DEGs
+![astrocyte_barplot_DEGs_240915](https://github.com/user-attachments/assets/02a884ed-9517-4a66-824e-d9669eb81fc2)
+
 Example: Persistently up-regulated LPS-response genes in Elovl7 cKO astrocytes
 ![AcuPersD6cKO_Heatmap_2409013](https://github.com/user-attachments/assets/4c4348f5-cd69-487e-b996-85a47ca968ba)
-
